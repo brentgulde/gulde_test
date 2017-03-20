@@ -11,14 +11,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'views/app.html'));
 });
-app.get('/about', function(req, res){
+app.get('/app4', function(req, res){
   res.sendFile(path.join(__dirname, 'views/app1.html'));
-});app.get('/about', function(req, res){
+});app.get('/app2', function(req, res){
   res.sendFile(path.join(__dirname, 'views/app2.html'));
-});app.get('/about', function(req, res){
+});app.get('/app3', function(req, res){
   res.sendFile(path.join(__dirname, 'views/app3.html'));
-});app.get('/about', function(req, res){
+});app.get('/app5', function(req, res){
   res.sendFile(path.join(__dirname, 'views/app5.html'));
+});
+});app.get('/app4', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/app4.html'));
 });
 
 //express server listen
